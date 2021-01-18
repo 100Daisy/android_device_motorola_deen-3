@@ -142,8 +142,8 @@ PRODUCT_PACKAGES += \
     Snap \
 
 # MotCamera2
-#PRODUCT_PACKAGES += \
-#    MotCamera2 \
+PRODUCT_PACKAGES += \
+    MotCamera2 \
 
 # Codec2 modules
 PRODUCT_PACKAGES += \
