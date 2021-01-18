@@ -22,17 +22,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from deen device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common dotOS stuff
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common LineageOS stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := deen
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_NAME := dot_deen
+PRODUCT_NAME := lineage_deen
 PRODUCT_MODEL := Motorola One
 
-# Inherit some extra dotOS stuff
+# Inherit some extra LineageOS stuff
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_SCREEN_DENSITY := 420
 TARGET_GAPPS_ARCH := arm64
@@ -41,7 +41,7 @@ TARGET_VENDOR := Motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=deen \
-        PRIVATE_BUILD_DESC="redfin-user 11 RQ1A.210105.003 7005429 release-keys"
+        PRIVATE_BUILD_DESC="laurel_sprout-user 10 QKQ1.190910.002 V11.0.23.0.QFQMIXM release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ1A.210105.003/7005429:user/release-keys"
+BUILD_FINGERPRINT := "Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.23.0.QFQMIXM:user/release-keys"
